@@ -1,1 +1,0 @@
-# resurgence2017smvdu

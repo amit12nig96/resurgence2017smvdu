@@ -15,6 +15,131 @@ body{
 }
 
 
+
+
+.about
+{ 
+    max-width: 100%;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+}
+.about img{
+    transition: all 1.5s ease;
+}
+
+.about.hidden img{
+    opacity: 1;
+    transform: translate3d(0, 0, 50px) translateY(-150px);
+}
+
+
+@keyframes my-animation {        
+  from {
+    opacity : 0;
+    left : -400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+
+.run-animation {
+  position: relative;
+  animation: my-animation 2.5s ease;
+}
+.gallery-animation {
+    position: relative;
+  animation: my-animation 2.5s ease;
+}
+
+#logo {
+  text-align: center;
+  font-family : Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+@keyframes aby-animation {        
+  from {
+    opacity : 0;
+    left : 400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+
+.button {
+  position: relative;
+  animation: aby-animation 2.5s ease;
+}
+/*event animation*/
+@keyframes y-animation {        
+  from {
+    opacity : 0;
+    left : 400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+
+.animation {
+  position: relative;
+  animation: y-animation 2.5s ease;
+}
+ /*about animation*/ 
+@keyframes ay-animation {        
+  from {
+    opacity : 0;
+    left : 400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+
+.ab-animation {
+  position: relative;
+  animation: ay-animation 2.5s ease;
+}
+  
+/*amit adarsh animation */
+@keyframes amity-animation {        
+  from {
+    opacity : 0;
+    left : -400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+.card {
+  position: relative;
+  animation: amity-animation 2.5s ease;
+}
+.card.mation {
+  position: relative;
+  animation: amity-animation 2.5s ease;
+}
+@keyframes adary-animation {        
+  from {
+    opacity : 0;
+    left : 400px;
+  }
+  to {
+    opacity : 1;
+    left : 0;
+  }      
+}
+.card.animation {
+  position: relative;
+  animation: adary-animation 2.5s ease;
+}
+
 #slstudios{
   font-family:Oswald;
   font-size:72px;
@@ -27,7 +152,6 @@ body{
 	min-height: 260px;
 	max-width: calc(100vw - 40px);
 	margin: 0px;
-    margin-bottom: opx;
 	padding: 100px 0;
 	z-index: 1;
 	position: relative;
@@ -171,7 +295,7 @@ body #cdawrap {
 
 
 .amit{
-    background-color: darkgray;
+    background-color: lightslategrey;
 }
 
 .amit1{ color:  #660000;
@@ -299,7 +423,7 @@ section{
 .caption{
 	color :white;
 	font-family:'Bebas';
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	margin-top: 15px;
 }
 .eve{

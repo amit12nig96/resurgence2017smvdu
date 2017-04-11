@@ -1,0 +1,1 @@
+$('body').append('<a id="znetlive" href="https://www.znetlive.com/" target="_blank"><img style="width:150px;height:120px;z-index:900000000;position:fixed;bottom:-30px;right:10px" src="/assets/img/znetlivelogo.png" /></a>');

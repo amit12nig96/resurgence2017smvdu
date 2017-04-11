@@ -1,5 +1,7 @@
 	<html>
-<head>
+<head>  
+        <meta name="author" content="Amit Kumar Yadav, Adarsh chauhan ">
+		<meta name="keywords" content="Resurgence, Annual Cultural Fest, university, smvdu, katra, jammu">
 		<link rel="stylesheet" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
@@ -28,22 +30,22 @@
 					<ul id="nav-mobile" class="left hide-on-med-and-down" style="width:41%;">
 						<li   style="width:23%;"><a href="index.html" class="sec1">Home</a></li>   
 						<li   style="width:23%;"><a href="about.html" class="sec1" >About</a></li>
-						<li  style="width:40%;"><a href="team.php" target="_blank" class="sec1">  Organising Team</a></li>
+						<li  style="width:40%;"><a href="team.html" target="_blank" class="sec1">  Organising Team</a></li>
                         
 					</ul>
 					<ul id="nav-mobile" class="right hide-on-med-and-down" style="width:41%;">
                         <li   style="width:23%;"><a href="event.html" class="sec1" >Events</a></li>
 						<li  style="width:50%;"><a href="#" class="sec3">Faculty Co-ordinator</a></li>
-						<li  style="width:25%;"><a href="gallery/index.php" class="sec1">Gallery</a></li>
+						<li  style="width:25%;"><a href="gallery/index.html" class="sec1">Gallery</a></li>
 						
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
 						<li style="margin-top:40px;"><a href="#" class="sec1">Home</a></li>
 						<li><a href="about.html" class="sec2">About</a></li>
-                        <li><a href="oteam.php">Organising Team</a></li>
+                        <li><a href="team.html">Organising Team</a></li>
 						<li><a href="event.html" class="sec4">Events</a></li>
                         <li><a href="#" class="sec3">Faculty Co-ordinator</a></li>
-						<li><a href="gallery/index.php">Gallery</a></li>
+						<li><a href="gallery/index.html">Gallery</a></li>
 						
 					</ul>
 				</div>
@@ -54,13 +56,13 @@
 				<center>
                     <div class="grid__item color-3">
 				<a class="link link--nukun" id="slstudios" href="#">res<span>u</span>rgence 2<span>0</span>17 </a></div>
-				<!-- class="title annual1" style="font-size:60px;margin-top:200px">
-					Annual <span>Resurgence</span> 2017</div>-->
+				<div class="title annual1" style="font-size:60px;margin-top:0px">
+					Annual <span>Cultural</span> Fest</div>
 					<span class="sexy_line"></span>
-				  <div class="title" style="font-size:40px;margin-top:20px;">
-					<span>04th</span> - <span>06th</span> March</div>
-                    <a href="gallery/register.php"><button class="button" >Register here</button></a>
-					<br><br><div class="title" style="font-size:60px">Shri Mata Vaishno Devi University, Katra</div>
+				  <div class="title" style="font-size:40px;margin-top:5px;">
+					<span>28th</span> - <span>30th</span> March</div>
+                    <a href="gallery/register.php"><button id="logo" class="button" >Register here</button></a>
+					<br><br><div id="logo" class="run-animation" style="font-size:60px; color:white;"><p>Shri Mata Vaishno Devi University, Katra</p></div>
 		            
 				</center>
 			</div>
@@ -77,18 +79,23 @@
 				
 					<center>
 				<div class="annual" style="font-size:20px;margin-top:160px;text-align: center;">
-				    <div style="height:180px;width:180px;margin:30px; display: inline-block; margin-right: 10%;">
-				    <a href="#">
-				        <img src="images/vk.jpg" width="200px" height="200px" class="img-circle">
-				        <div class="caption" style="font-size:22px;">Varun Tripathi </div>
-				    </a>
-				    </div>
-
-				
-				    <div style="height:180px;width:180px;margin:30px; display: inline-block; margin-left: 10%;">
+				    <div id="logo" class="run-animation"  style="height:200px;width:200px;margin:30px; display: inline-block; margin-right: 10%;">
 				    <a href="#">
 				        <img src="images/yu.jpg" width="200px" height="200px" class="img-circle">
-				        <div class="caption" style="font-size:22px;">&nbsp;Yugal Khajuria</div>
+				        <div class="caption" style="font-size:22px;">Dr.Yugal Khajuria<br>Dean Of Students </div>
+				    </a>
+				    </div>
+                    
+                   <div style="height:200px;width:200px;margin:30px; display: inline-block; margin-left: 10%;">
+				    <a href="#">
+				        <img src="images/vk.jpg" width="200px" height="200px" class="img-circle">
+				        <div class="caption" style="font-size:22px;">Dr.Varun Tripathi<br>President, BCA</div>
+				    </a>
+				    </div>
+                    <div id="logo" class="animation" style="height:200px;width:250px;margin:30px; display: inline-block; margin-left: 10%;">
+				    <a href="#">
+				        <img src="images/rak.jpg" width="200px" height="200px" class="img-circle">
+				        <div class="caption" style="font-size:22px;">Dr. Rakesh Kumar<br>Vice-President, BCA</div>
 				    </a>
 				    </div>
 
@@ -176,9 +183,14 @@
                 (function(d, t) {
                         var g = d.createElement(t),
                         s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_3e4558ec470afc375829da731ac81d05.js";
+                        /*g.src = "https://cdn.pushalert.co/integrate_3e4558ec470afc375829da731ac81d05.js";*/
+                         g.src = "http://resurgence.smvdu.ac.in/js/integrate.js";
                         s.parentNode.insertBefore(g, s);
                 }(document, "script"));
 		</script>
+        <script src="js/button.js"></script>
+         <script src="js/shrimata.js"></script>
+            <script src="js/shrimata1.js"></script>
+       
 	</body>
 </html>

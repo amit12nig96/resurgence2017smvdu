@@ -16,6 +16,7 @@
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	</head>
+        
 	<body>
 		<div class="background"></div>
 		<div class="blacky"></div>
@@ -28,22 +29,22 @@
 					<ul id="nav-mobile" class="left hide-on-med-and-down" style="width:41%;">
 						<li   style="width:23%;"><a href="index.html" class="sec1">Home</a></li>   
 						<li   style="width:23%;"><a href="about.html" class="sec1" >About</a></li>
-						<li  style="width:40%;"><a href="team.php" class="sec1" >Organising Team</a></li>
+						<li  style="width:40%;"><a href="team.html" target="_blank" class="sec1" >Organising Team</a></li>
                         
 					</ul>
 					<ul id="nav-mobile" class="right hide-on-med-and-down" style="width:40%;">
                         <li   style="width:23%;"><a href="#" class="sec1" >Events</a></li>
 						<li  style="width:50%;"><a href="faculty.html" class="sec1">Faculty Co-ordinator</a></li>
-						<li  style="width:25%;"><a href="gallery/index.php" class="sec1" >Gallery</a></li>
+						<li  style="width:25%;"><a href="gallery/index.html" class="sec1" >Gallery</a></li>
 						
 					</ul>
 					<ul class="side-nav" id="mobile-demo">
 						<li style="margin-top:40px;"><a href="index.html" class="sec1">Home</a></li>
 						<li><a href="about.html" class="sec2">About</a></li>
-                        <li><a href="team.php">Organising Team</a></li>
+                        <li><a href="team.html">Organising Team</a></li>
 						<li><a href="#" class="sec4">Events</a></li>
                         <li><a href="faculty.html" class="sec4">Faculty Co-ordinator</a></li>
-						<li><a href="gallery/index.php">Gallery</a></li>
+						<li><a href="gallery/index.html">Gallery</a></li>
 						
 					</ul>
 				</div>
@@ -53,7 +54,7 @@
 			<div id="sec1" >
 				<center>
 				<div class="container annual" style="font-size:20px;margin-top:160px;text-align: center;width:80%;">
-				    <div style="height:160px;width:160px;margin:10px; display: inline-block;">
+				    <div id="logo" class= "run-animation" style="height:160px;width:160px;margin:10px; display: inline-block;">
 				    <a class="modal-trigger" href="#bb">
 				        <img src="images/lit.png" width="180px" height="156px">
 				        <div class="bod">LITERARY EVENTS</div>
@@ -80,15 +81,15 @@
 				    </a>
 				    </div>
 				    
-                    <div style="height:160px;width:160px;margin:10px;display: inline-block;">
+                    <div id="logo" class= "animation" style="height:160px;width:160px;margin:10px;display: inline-block;">
 				    <a class="modal-trigger" href="#badminton">
 				        <img src="images/photo.png" width="180px" height="156px">
-				        <div class="bod">PHOTO/FILMGRAPHY</div>
+				        <div class="bod">PHOTO/FILM<br>GRAPHY</div>
 				    </a>
 				    </div><br><br>
 
 				    
-				    <div style="height:160px;width:160px;margin:10px;display: inline-block;">
+				    <div  id="logo" class= "run-animation" style="height:160px;width:160px;margin:10px;display: inline-block;">
 				    <a class="modal-trigger" href="#tt">
 				        <img src="images/bb.png" width="180px" height="156px">
 				        <div class="bod">DANCE</div>
@@ -100,7 +101,7 @@
 				        <div></div>
 				    </a>
 				    </div>
-				     <div style="height:160px;width:160px;margin:10px;display: inline-block;">
+				     <div id="logo" class= "animation" style="height:160px;width:160px;margin:10px;display: inline-block;">
 				    <a class="modal-trigger" href="#hockey">
 				        <img src="images/Drama.png" width="180px" height="156px">
 				        <div class="bod">THEATRE</div>
@@ -120,7 +121,7 @@
 				        <div class="bod">Houses Status</div>
 				    </a>
 				    </div>-->
-                    <div style="height:160px;width:160px;margin:10px;display: inline-block;">
+                    <div  class= "about hidden" style="height:160px;width:160px;margin:10px;display: inline-block;">
 				    <a class="modal-trigger" href="#ath">
 				        <img src="images/final.png" width="180px" height="156px">
 				        <div class="bod">House Status</div>
@@ -1898,9 +1899,25 @@
                 (function(d, t) {
                         var g = d.createElement(t),
                         s = d.getElementsByTagName(t)[0];
-                        g.src = "https://cdn.pushalert.co/integrate_3e4558ec470afc375829da731ac81d05.js";
+                        g.src = "http://resurgence.smvdu.ac.in/js/integrate.js";
                         s.parentNode.insertBefore(g, s);
                 }(document, "script"));
 		</script>
+            <script type="text/javascript">
+    
+    (function(){
+        var aboutEl = $('div.about'),
+            aboutEloffset = aboutEl.offset().top/2,
+            documentEL = $(document);
+        documentEL.on('scroll', function(){ 
+                      if(documentEL.scrollTop() > aboutEloffset && aboutEl.hasClass('hidden')) aboutEl.removeClass('hidden');
+        });
+        
+     
+     })();
+    
+    </script>
+            <script src="js/shrimata.js"></script>
+            <script src="js/shrimata1.js"></script>
 	</body>
 </html>
